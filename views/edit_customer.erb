@@ -1,0 +1,35 @@
+
+<form action="/customers" method="post">
+<input type="hidden" name="id" value="<%= @customer.id %>">
+<table class="table table-responsive">
+  <thead>
+	<th>Parametrai</th>
+	<th>Customer</th>
+  </thead>
+	<tbody>
+    	   <tr>
+      		<td>ID</td>
+        	<td><%= @customer.id %></a></td>
+        </tr>
+        <tr>
+        	<td>Name</td>
+        	<td><input name="name" type="text" value="<%= @customer.name %>"></td>
+        </tr>
+        <tr>
+      		<td>Surname</td>
+        	<td><input name="surname" type="text" value="<%= @customer.surname %>"></td>
+        </tr>
+		    <tr>
+      		<td>Code</td>
+        	<td><input name="code" type="text" value="<%= @customer.code %>"></td>
+        </tr>
+        <tr>
+      		<td>Age</td>
+        	<td><input name="age" type="text" value="<%= @customer.age %>"></td>
+        </tr>
+  	</tbody>
+  </table>
+
+<button type="submit" class="btn btn-warning">Save</button>
+
+  </form>

@@ -1,5 +1,6 @@
+<h3> New Customer Window </h3>
 
-<form action="/customers" method="post">
+<form action="/new_customers" method="post">
 <input type="hidden" name="id" value="<%= @customer.id %>">
 
 
@@ -9,11 +10,6 @@
 	<th>Customer</th>
   </thead>
 	<tbody>
-    	   <tr>
-      		<td>ID</td>
-        	<td><%= @customer.id %></a></td>
-        </tr>
-        <tr>
         	<td>Name</td>
         	<td><input name="name" type="text" value="<%= @customer.name %>"></td>
         </tr>
